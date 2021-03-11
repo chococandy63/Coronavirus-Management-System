@@ -457,17 +457,18 @@ def frame2():
     #events on staff's frame buttons
     def submitstaffbox():
         messagebox.showinfo("","Staff added,check the show data button to view staff data.")
+    def removestaffbox():
+        messagebox.showinfo("","Staff Removed,check the show data button to view staff data.")
+    def unavailstaffbox():
+        messagebox.showinfo("","Staff added to Unavailable list,check the show data button to view staff data.")
     def bindfn4():
         staffdata_enter()
         submitstaffbox()
-    def removestaffbox():
-        messagebox.showinfo("","Staff Removed,check the show data button to view staff data.")
     def bindfn5():
         staffdata_delete()
         removestaffbox()
-    def unavailstaffbox():
-        messagebox.showinfo("","Staff added to Unavailable list,check the show data button to view staff data.")
     def bindfn6():
+        staffdata_delete()
         unavailstaff()
         unavailstaffbox()
     #creating staff_frame
@@ -631,4 +632,5 @@ def frame1():
     myname.place(x=200,y=550)
 frame1()
 win.mainloop()
+
 
