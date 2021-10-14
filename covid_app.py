@@ -1,5 +1,5 @@
 from tkinter import*
-import mysql.connector#for connecting mysql with python
+import mysql.connector#for connecting mysql with Python
 import webbrowser#for interacting with web browser
 import requests
 from bs4 import BeautifulSoup#for webscraping in python
